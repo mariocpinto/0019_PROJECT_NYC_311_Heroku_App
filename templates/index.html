@@ -1,0 +1,48 @@
+<!doctype html>
+<title>NYC311 Data Analysis</title>
+<link rel=stylesheet type=text/css href='../static/style.css'>
+<div class=page>
+  <h1>NYC 311 Call Data Analysis</h1>
+  <div class=metanav>
+    <p>
+      This page presents the results of the analysis of NYC 311 data from 2010 - 2015.
+      <br><br>
+      Approximately 74% of the calls in this period fall into five categories:
+      <ul>
+        <li> <b>Heating and Electric:</b> <br>
+          Calls with complaint type 'Heating', 'Heat/Hot Water', and 'Electric'. </li>
+          <br>
+        <li> <b>Plumbing and Construction:</b> <br>
+          Calls with complaint type 'Plumbing', 'General Construction', 'Paint - Plaster', 'Nonconst', 'General Construction/Plumbing', and 'Building/Use'. </li>
+          <br>
+        <li> <b>Streets, Traffic and Parking:</b> <br>
+          Calls with complaint type 'Street Light Condition', 'Street Condition', 'Blocked Driveway', 'Illegal Parking', 'Traffic Signal Condition', 'Damaged Tree', and 'Broken Muni Meter'. </li>
+          <br>
+        <li> <b>Water and Hygiene:</b> <br>
+          Calls with complaint type 'Water System', 'Sewer', 'Dirty Conditions', 'Sanitation Condition', 'Unsanitary Condition', and 'Rodent'. </li>
+          <br>
+        <li> <b>Noise:</b> <br>
+          Calls with complaint type 'Noise', 'Noise - Commercial', and 'Noise - Street/Sidewalk'.</li>
+          <br>
+      </ul>
+    </p>
+
+    <p>
+      Please select a borough below to display a graph of the number of complaint calls per year, broken down by the above category types:
+    </P>
+
+    <form id='borough_selection_form' method='post' action='index' >
+        <p>
+          <input type='radio' name='selected_borough' value='Bronx' /> Bronx <br />
+          <input type='radio' name='selected_borough' value='Brooklyn' /> Brooklyn <br />
+          <input type='radio' name='selected_borough' value='Manhattan' /> Manhattan <br />
+          <input type='radio' name='selected_borough' value='Queens' /> Queens <br />
+          <input type='radio' name='selected_borough' value='Staten_Island' /> Staten Island <br />
+        </p>
+        <p>
+          <input type='submit' value='Submit' />
+        </p>
+    </form>
+
+  </div>
+</div>
